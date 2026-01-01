@@ -16,7 +16,14 @@ cask "willow-voice" do
 
   auto_updates true
 
-  app "Willow Voice.app"
+  # DMG contains the installer, app is installed to /Applications
+  installer script: {
+    executable: "#{staged_path}/Willow.Installer.app/Contents/MacOS/Willow.Installer",
+    args:       ["--install"],
+  }
+
+  # The app is installed to /Applications/Willow Voice.app
+  app "Willow Voice.app", target: "/Applications/Willow Voice.app"
 
   zap trash: [
     "~/Library/Application Support/Willow Voice",
