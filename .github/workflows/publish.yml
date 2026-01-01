@@ -1,0 +1,21 @@
+name: Publish Tap
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Casks
+        run: |
+          brew install --cask aculich/tap-2026/willow-voice --dry-run || true
+      - name: Test Tap
+        run: |
+          brew tap aculich/tap-2026
+          brew info aculich/tap-2026/willow-voice
+

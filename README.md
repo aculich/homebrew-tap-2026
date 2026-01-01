@@ -1,11 +1,11 @@
-# aculich/homebrew-tap
+# aculich/homebrew-tap-2026
 
-Homebrew tap for custom casks and formulae maintained by aculich.
+Homebrew tap for custom casks and formulae maintained by aculich (2026 vintage).
 
 ## Installation
 
 ```bash
-brew tap aculich/tap
+brew tap aculich/tap-2026
 ```
 
 ## Available Casks
@@ -15,7 +15,7 @@ brew tap aculich/tap
 Advanced speech-to-text application for macOS.
 
 ```bash
-brew install --cask aculich/tap/willow-voice
+brew install --cask aculich/tap-2026/willow-voice
 ```
 
 **Note**: Requires license activation via OAuth2 with Google account.

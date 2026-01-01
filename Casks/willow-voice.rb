@@ -2,7 +2,10 @@ cask "willow-voice" do
   version "latest"
   sha256 :no_check
 
-  url "https://willowvoice.com/download",
+  # Note: Willow Voice requires manual download from website
+  # Visit: https://willowvoice.com to download
+  # This cask is a placeholder for future automation
+  url "https://willowvoice.com",
       verified: "willowvoice.com"
   name "Willow Voice"
   desc "Advanced speech-to-text application for macOS"
